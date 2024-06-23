@@ -1,3 +1,5 @@
 from django.db import models
 
-# Create your models here.
+class BroadcastStandard(models.Model):
+    country = models.CharField(max_length=100)
+    json_data = models.JSONField()
